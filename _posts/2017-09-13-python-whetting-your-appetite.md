@@ -4,6 +4,7 @@ title: Python - Whetting your appetite
 description: "python study"
 modified: 2017-09-13
 tags: [python]
+categories: [python]
 ---
 
 

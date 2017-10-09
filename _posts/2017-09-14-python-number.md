@@ -4,6 +4,7 @@ title: Python - Number
 description: "python study"
 modified: 2017-09-14
 tags: [python]
+categories: [python]
 ---
 
 # python 숫자형 (Number)

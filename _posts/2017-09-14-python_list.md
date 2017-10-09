@@ -4,6 +4,7 @@ title: Python - List
 description: "python study"
 modified: 2017-09-14
 tags: [python]
+categories: [python]
 ---
 
 # 시퀀스 타입

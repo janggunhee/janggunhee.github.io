@@ -4,6 +4,7 @@ title: Python - String
 description: "python study"
 modified: 2017-09-14
 tags: [python]
+categories: [python]
 ---
 # 문자열 (String)
 
