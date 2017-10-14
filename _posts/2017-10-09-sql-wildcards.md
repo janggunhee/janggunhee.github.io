@@ -1,7 +1,7 @@
 ---
 layout: post
-title: SQL 알아가기
-description: "SQL - BETWEEN 연산자"
+title: SQL 알아가기 - Wildcard Characters
+description: "SQL - Wildcard Characters"
 modified: 2017-10-09
 tags: [SQL]
 categories: [SQL]
@@ -9,9 +9,8 @@ categories: [SQL]
 
 # SQL - Wildcard Characters
 
->와일드 카드 문자는 문자열의 다른 문자를 대체하는 데 사용됩니다. 
->
->와일드 카드 문자는 SQL LIKE 연산자와 함께 사용됩니다. LIKE 연산자는 WHERE 절에서 열의 지정된 패턴을 검색하는 데 사용됩니다. 
+> 와일드 카드 문자는 문자열의 다른 문자를 대체하는 데 사용됩니다. 
+> 와일드 카드 문자는 SQL LIKE 연산자와 함께 사용됩니다. LIKE 연산자는 WHERE 절에서 열의 지정된 패턴을 검색하는 데 사용됩니다. 
 
 LIKE 연산자와 함께 사용되는 두 개의 와일드 카드가 있습니다. 
 
@@ -28,63 +27,69 @@ LIKE 연산자와 함께 사용되는 두 개의 와일드 카드가 있습니�
 
 #### 다음은 `%`와 `_` 와일드 카드가 있는 다른 LIKE 연산자를 보여주는 몇 가지 예입니다.
 
-|LIKE Operator	|Description|
-|----------|-------------|
+| LIKE Operator	| Description |
+|:--------------|:-------------|
 |WHERE CustomerName LIKE `a%`	|`'a'`로 시작하는 값을 찾습니다.|
 |WHERE CustomerName LIKE `%a`	|`'a'`로 끝나는 값을 찾습니다.|
 |WHERE CustomerName LIKE `%or%`| `'or'`값이 있는 어느 위치의 값을 찾습니다.|
 |WHERE CustomerName LIKE `_r%`	|두 번째 위치에 `'r'`이있는 값을 찾습니다.|
-|WHERE CustomerName LIKE `a_%_%`	|`'a'`로 시작하고 길이가 3 자 이상인 값을 찾습니다.|
+|WHERE CustomerName LIKE `a_%_%` |`'a'`로 시작하고 길이가 3 자 이상인 값을 찾습니다.|
 |WHERE ContactName LIKE `a%o`	|`'a'`로 시작하고 `'o'`로 끝나는 값을 찾습니다."|
-
+{: rules="groups"}
 
 ### Using the % Wildcard
 
 다음 SQL 문은 City가 'ber'로 시작하는 모든 고객을 선택합니다.
 
-```sql
+{% highlight sql %}
 SELECT * FROM Customers
 WHERE City LIKE 'ber%';
-```
+{% endhighlight %}
 
-![](../images/sql-images/bercity.png)
+![]({{ site.url }}../images/sql-images/bercity.png)
+{: .image-left}
 
-다음 SQL 문은 패턴이 'es'인 City가있는 모든 고객을 선택합니다.
+다음 SQL 문은 패턴이 'es'인 City가 있는 모든 고객을 선택합니다.
 
-```sql
+{% highlight sql %}
 SELECT * FROM Customers
 WHERE City LIKE '%es%';
-```
+{% endhighlight %}
 
 ### Using the _ Wildcard
 
 다음 SQL은 'erlin'으로 시작하는 도시가 있는 모든 고객을 선택합니다.
 
-```sql
+{% highlight sql %}
 SELECT * FROM Customers
 WHERE City LIKE '_erlin';
-```
-![](../images/sql-images/elin.png)
+{% endhighlight %}
+
+![]({{ site.url }}../images/sql-images/elin.png)
+{: .image-left}
 
 
 다음 SQL 문은 도시가 "L"로 시작하고 모든 문자, 그 다음에 "n"다음에 문자가오고 "on"이 뒤에 오는 모든 고객을 선택합니다.
 
-```sql
+{% highlight sql %}
 SELECT * FROM Customers
 WHERE City LIKE 'L_n_on';
-```
-![](../images/sql-images/l-d-n.png)
+{% endhighlight %}
+
+![]({{ site.url }}../images/sql-images/l-d-n.png)
+{: .image-left}
 
 ### Using the [charlist] Wildcard
 
 
 다음 SQL 문은 도시가 'b', 's'또는 'p'로 시작하는 모든 고객을 선택합니다.
 
-```sql
+{% highlight sql %}
 SELECT * FROM Customers
 WHERE City LIKE '[bsp]%';
-```
-![](../images/sql-images/bsq.png)
+{% endhighlight %}
+
+![]({{ site.url }}../images/sql-images/bsq.png)
 
 다음 SQL 문은 도시가 'a', 'b'또는 'c'로 시작하는 모든 고객을 선택합니다.
 ```sql
@@ -96,14 +101,16 @@ WHERE City LIKE '[a-c]%';
 
 다음 두 SQL 문은 'b', 's'또는 'p'로 시작하는 도시가 아닌 모든 고객을 선택합니다.
 
-```sql
+{% highlight sql %}
 SELECT * FROM Customers
 WHERE City LIKE '[!bsp]%';
-```
+{% endhighlight %}
+
 or
 
-```sql
+{% highlight sql %}
 SELECT * FROM Customers
 WHERE City NOT LIKE '[bsp]%';
-```
-![](../images/sql-images/not%20sss.png)
+{% endhighlight %}
+
+![]({{ site.url }}../images/sql-images/not%20sss.png)
