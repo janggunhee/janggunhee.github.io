@@ -1,6 +1,6 @@
 ---
 layout: post
-title: First Post
+title: Second Post
 description: "두 번째로 올리는 생초보 분투기"
 modified: 2017-09-13
 tags: [life, test, first]
