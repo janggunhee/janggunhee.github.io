@@ -4,7 +4,7 @@ title: First Post
 description: "첫 번째 게시물"
 modified: 2017-09-13
 tags: [life, test, first]
-categories: 
+categories: [life]
 ---
 
 첫 번째로 올리는 post이다. 
