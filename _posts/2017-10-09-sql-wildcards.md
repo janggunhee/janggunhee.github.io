@@ -21,6 +21,7 @@ LIKE 연산자와 함께 사용되는 두 개의 와일드 카드가 있습니�
 #### MS Access 및 SQL Server에서는 다음을 사용할 수도 있습니다. 
 
 **[charlist]** - 일치시킬 문자와 세트의 범위를 정의합니다.
+
 **[^ charlist]** - 일치하지 않는 문자의 집합과 범위를 정의합니다.
 
 와일드 카드는 조합하여 사용할 수도 있습니다! 
@@ -67,7 +68,6 @@ WHERE City LIKE '_erlin';
 
 ![]({{ site.url }}../images/sql-images/elin.png)
 {: .image-left}
-
 
 다음 SQL 문은 도시가 "L"로 시작하고 모든 문자, 그 다음에 "n"다음에 문자가오고 "on"이 뒤에 오는 모든 고객을 선택합니다.
 

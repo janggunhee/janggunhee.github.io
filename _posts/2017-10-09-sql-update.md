@@ -1,7 +1,7 @@
 ---
 layout: post
-title: SQL 알아가기
-description: "SQL - BETWEEN 연산자"
+title: SQL 알아가기 - UPDATE
+description: "SQL - UPDATE"
 modified: 2017-10-09
 tags: [SQL]
 categories: [SQL]
@@ -13,30 +13,34 @@ UPDATE 문은 테이블의 기존 레코드를 수정하는 데 사용됩니다.
 
 ### UPDATE Syntax
 
-```sql
+{% highlight sql %}
 UPDATE table_name
 SET column1 = value1, column2 = value2, ...
 WHERE condition;
-```
+{% endhighlight %}
+
+
 > 참고 : 테이블의 레코드를 업데이트 할 때주의하십시오! 
 > UPDATE 문에서 WHERE 절을 확인하십시오. 
-> WHERE 절은 갱신해야하는 레코드를 지정핟나.WHERE 절을 생략하면 테이블의 모든 레코드가 업데이트됩니다!
+> WHERE 절은 갱신해야하는 레코드를 지정하나.WHERE 절을 생략하면 테이블의 모든 레코드가 업데이트됩니다!
 > 
 
 ### Demo Database
 
-![](../images/sql-images/demo-4.png)
+![]({{ site.url }}../images/sql-images/demo-4.png)
 
 ### UPDATE Table
 
 다음 SQL 문은 첫 번째 고객 (CustomerID = 1)을  new contact person 및 new city로 업데이트합니다.
 
-```sql
+{% highlight sql %}
 UPDATE Customers
 SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'
 WHERE CustomerID = 1;
-```
-![](../images/sql-images/update%20table.png)
+{% endhighlight %}
+
+
+![]({{ site.url }}../images/sql-images/update%20table.png)
 
 ### UPDATE Multiple Records
 
@@ -44,20 +48,24 @@ WHERE CustomerID = 1;
 
 다음 SQL 문은 country가 'Mexico'인 모든 레코드에 대해 연락처 이름을 'Juan'으로 업데이트합니다.
 
-```sql
+{% highlight sql %}
 UPDATE Customers
 SET ContactName='Juan'
 WHERE Country='Mexico';
-```
-![](../images/sql-images/update%20multie.png)
+{% endhighlight %}
+
+![]({{ site.url }}../images/sql-images/update%20multie.png)
 
 #### Update 할때 주의!! 
 
-> 레코드를 업데이트 할 때는주의하십시오. WHERE 절을 생략하면 모든 레코드가 업데이트됩니다!
+> 레코드를 업데이트 할 때는주의하십시오. 
+> WHERE 절을 생략하면 모든 레코드가 업데이트됩니다!
+>
 
-```sql
+{% highlight sql %}
 UPDATE Customers
 SET ContactName='Juan';
 Try it Yourself »
-```
-![](../images/sql-images/update%20careful.png)
+{% endhighlight %}
+
+![]({{ site.url }}../images/sql-images/update%20careful.png)
