@@ -51,7 +51,7 @@ WHERE NOT condition;
 
 다음 SQL 문은 country가 'Germany'이고 도시가 'Berlin'인 'Customers'의 모든 필드를 선택합니다.
 
-```
+```sql
 SELECT * FROM Customers
 WHERE Country='Germany' AND City='Berlin';
 ```
@@ -61,7 +61,7 @@ WHERE Country='Germany' AND City='Berlin';
 
 다음 SQL 문은 도시가 'Berlin'또는 'München'인 'Customers'의 모든 필드를 선택합니다.
 
-```
+```sql
 SELECT * FROM Customers
 WHERE City='Berlin' OR City='München';
 ```
@@ -84,7 +84,7 @@ WHERE NOT Country='Germany';
 
 다음 SQL 문은 국가가 'Germany'이고 도시가 'Berlin'또는 'München'(복잡한 표현식을 형성하기 위해 괄호를 사용해야 함) 인 'Customers'의 모든 필드를 선택합니다.
 
-```
+```sql
 SELECT * FROM Customers
 WHERE Country='Germany' AND (City='Berlin' OR City='München');
 ```
@@ -92,7 +92,7 @@ WHERE Country='Germany' AND (City='Berlin' OR City='München');
 
 다음 SQL 문은 country가 'Germany'가 아니며 'USA'가 아닌 'Customers'의 모든 필드를 선택합니다.
 
-```
+```sql
 SELECT * FROM Customers
 WHERE NOT Country='Germany' AND NOT Country='USA';
 ```
