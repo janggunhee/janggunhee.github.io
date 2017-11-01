@@ -3,8 +3,8 @@ layout: post
 title: Model Field 3
 description: "Model field reference 정리하기 3"
 modified: 2017-10-16
-tags: [django]
-categories: [django]
+tags: [Django]
+categories: [Django]
 ---
 
 ## FilePathField

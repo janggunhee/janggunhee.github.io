@@ -3,8 +3,8 @@ layout: post
 title: Model Field 2
 description: "Model field reference 정리하기 2"
 modified: 2017-10-16
-tags: [django]
-categories: [django]
+tags: [Django]
+categories: [Django]
 ---
 
 

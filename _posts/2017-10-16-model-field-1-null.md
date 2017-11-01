@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Model Field 
+title: Model Field 1
 description: "Model field reference 정리하기 1"
 modified: 2017-10-16
-tags: [django]
-categories: [django]
+tags: [Django]
+categories: [Django]
 ---
 
 # Model field reference
@@ -55,20 +55,18 @@ Django 규칙은 **NULL**이 아닌 빈 문자열을 사용하는 것입니다.
 튜플의 첫 번째 요소는 모델에 설정 될 실제 값이며,
 두 번째 요소는 사람이 읽을 수있는 이름입니다.
 
-```python
-
+{% highlight python %}
 YEAR_IN_SCHOOL_CHOICES = (
     ('FR', 'Freshman'),
     ('SO', 'Sophomore'),
     ('JR', 'Junior'),
     ('SR', 'Senior'),
 )
-
-```
+{% endhighlight %}
 
 일반적으로 모델 클래스 내에서 선택 사항을 정의하고 각 값에 대해 적절히 명명 된 상수를 정의하는 것이 가장 좋습니다.
 
-```python
+{% highlight python %}
 
 from django.db import models
 
@@ -91,11 +89,12 @@ class Student(models.Model):
 
     def is_upperclass(self):
         return self.year_in_school in (self.JUNIOR, self.SENIOR)
+{% endhighlight %}
 
-```
 모델 클래스 외부에서 선택 목록을 정의한 다음 참조 할 수는 있지만 모델 클래스 내의 각 선택 항목에 대한 선택 사항과 이름을 정의하면 해당 정보를 사용하는 클래스와 모든 정보가 유지되고 선택 사항을 쉽게 참조 할 수 있습니다.
 조직 목적으로 사용할 수있는 명명 된 그룹으로 사용 가능한 선택 사항을 수집 할 수도 있습니다.
-```python
+
+{% highlight python %}
 
 MEDIA_CHOICES = (
     ('Audio', (
@@ -111,7 +110,8 @@ MEDIA_CHOICES = (
     ('unknown', 'Unknown'),
 )
 
-```
+{% endhighlight %}
+
 각 튜플의 첫 번째 요소는 그룹에 적용 할 이름입니다. 
 두 번째 요소는 2- 튜플의 반복 가능이며 
 각 2- 튜플에는 옵션에 대한 값과 사람이 읽을 수있는 이름이 들어 있습니다. 
@@ -156,14 +156,14 @@ Django는 **choices set**이 있는 각 모델 필드에 대해 필드의 현재
 
 대신 원하는 기본값을 호출 가능 코드로 래핑하십시오. 예를 들어, **JSONField**의 기본 **dict**를 지정하려면 다음 함수를 사용하십시오.
 
-```python 
+{% highlight python %}
 
 def contact_default():
     return {"email": "to1@example.com"}
 
 contact_info = JSONField("ContactInfo", default=contact_default)
 
-```
+{% endhighlight %}
 
 **lambda**는 **migration**에 의해 직렬화 될 수 없기 때문에 **default**와 같은 field options에 사용할 수 없습니다. 
 
@@ -191,7 +191,7 @@ contact_info = JSONField("ContactInfo", default=contact_default)
 
 **NON_FIELD_ERRORS** 키를 **ModelForm** 내부 메타 클래스의 **error_messages** dictionary에 추가하여 모델 유효성 검사로 발생한 **NON_FIELD_ERRORS**에서 오류 메시지를 무시할 수 있습니다.
 
-```python
+{% highlight python %}
 
 from django.forms import ModelForm
 from django.core.exceptions import NON_FIELD_ERRORS
@@ -204,7 +204,7 @@ class ArticleForm(ModelForm):
             }
         }
         
-```
+{% endhighlight %}
 
 ## help_text
 
@@ -214,11 +214,11 @@ form 위젯과 함께 표시되는 추가 'help'텍스트는 field가 from을 �
 
 이 값은 자동 생성 양식에서 HTML 이스케이프 처리되지 않습니다. 원하는 경우 **help_text**에 HTML을 포함시킬 수 있습니다. 예 :
 
-```python
+{% highlight python %}
 
 help_text="Please use the following format: <em>YYYY-MM-DD</em>."
 
-```
+{% endhighlight %}
 
 또한 일반 텍스트와 `django.utils.html.escape ()`를 사용하여 HTML 특수 문자를 이스케이프 처리 할 수 있습니다. 
 
@@ -281,24 +281,19 @@ cross-site 스크립팅 공격을 피하기 위해 신뢰할 수 없는 사용�
 
 이 예제에서 `verbose name`은 'person 's first name'입니다.
 
-```python
-
+{% highlight python %}
 first_name = models.CharField("person's first name", max_length=30)
-
-```
+{% endhighlight %}
 
 이 예제에서, verbose name은 "first name"이다.:
 
-```python
-
+{% highlight python %}
 first_name = models.CharField(max_length=30)
-
-```
+{% endhighlight %}
 
 ForeignKey, ManyToManyField 및 OneToOneField에는 첫 번째 인수가 모델 클래스가되어야하므로 verbose_name 키워드 인수를 사용하십시오.
 
-```python
-
+{% highlight python %}
 poll = models.ForeignKey(
     Poll,
     on_delete=models.CASCADE,
@@ -310,8 +305,8 @@ place = models.OneToOneField(
     on_delete=models.CASCADE,
     verbose_name="related place",
 )
+{% endhighlight %}
 
-```
 verbose_name의 첫 문자를 대문자로 사용하지 않습니다. Django는 필요한 첫 문자를 자동으로 대문자로 표시합니다.
 
 
@@ -328,8 +323,7 @@ validator(유효성 검사기)는 값을 가져 와서 일부 조건을 충족�
 유효성 검사기는 다른 유형의 필드간에 유효성 검사 논리를 다시 사용하는 데 유용 할 수 있습니다. 
 예를 들어, 짝수 만 허용하는 유효성 검사기는 다음과 같습니다.
 
-```python
-
+{% highlight python %}
 from django.core.exceptions import ValidationError
 from django.utils.translation import ugettext_lazy as _
 
@@ -339,27 +333,26 @@ def validate_even(value):
             _('%(value)s is not an even number'),
             params={'value': value},
         )
-        
-```
+{% endhighlight %}
 
 필드의 **validators** argument를 통해 모델 필드에 추가 할 수 있습니다.
 
-```python 
-
+{% highlight python %}
 from django.db import models
 
 class MyModel(models.Model):
     even_field = models.IntegerField(validators=[validate_even])
-    
-```
+{% endhighlight %}
+
 validators가 실행되기 전에 값이 Python으로 변환되기 때문에 form과 동일한 validators를 사용할 수도 있습니다.
 
-```
+{% highlight python %}
 from django import forms
 
 class MyForm(forms.Form):
     even_field = forms.IntegerField(validators=[validate_even])
-```
+{% endhighlight %}
+
 더 복잡하거나 구성 가능한 유효성 검사기에 **__call __ ()** 메서드가있는 클래스를 사용할 수도 있습니다. 예를 들어, **RegexValidator**는 이 기술을 사용합니다. 클래스 기반 유효성 검사기가 유효성 검사기 모델 필드 옵션에서 사용되는 경우 **deconstruct()** 및 **__eq __ ()** 메서드를 추가하여 마이그레이션 프레임 워크에서 해당 클래스를 직렬화 할 수 있는지 확인해야합니다.
 
 ## Field types
@@ -371,9 +364,10 @@ class AutoField (** options)
 사용 가능한 ID에 따라 자동으로 증가하는 IntegerField. [[source:link]](https://docs.djangoproject.com/en/1.11/_modules/django/db/models/fields/#AutoField)
 보통 이것을 직접 사용할 필요는 없습니다. 별도로 지정하지 않으면 기본 키 필드가 자동으로 모델에 추가됩니다. [(Automatic primary key fields)](https://docs.djangoproject.com/en/1.11/topics/db/models/#automatic-primary-key-fields)
 
-```
+{% highlight python %}
 id = models.AutoField(primary_key=True)
-```
+{% endhighlight %}
+
 ## BigAutoField
 
 ### class BigAutoField(**options)[[source:link]](https://docs.djangoproject.com/en/1.11/_modules/django/db/models/fields/#BigIntegerField)

@@ -94,10 +94,11 @@ WHERE City LIKE '[bsp]%';
 ![]({{ site.url }}../images/sql-images/bsq.png)
 
 다음 SQL 문은 도시가 'a', 'b'또는 'c'로 시작하는 모든 고객을 선택합니다.
-```sql
+
+{% highlight sql %}
 SELECT * FROM Customers
 WHERE City LIKE '[a-c]%';
-```
+{% endhighlight %}
 
 ### Using the [!charlist] Wildcard
 
