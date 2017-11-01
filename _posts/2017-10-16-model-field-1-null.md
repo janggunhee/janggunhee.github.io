@@ -55,19 +55,18 @@ Django 규칙은 **NULL**이 아닌 빈 문자열을 사용하는 것입니다.
 튜플의 첫 번째 요소는 모델에 설정 될 실제 값이며,
 두 번째 요소는 사람이 읽을 수있는 이름입니다.
 
-{% highlight python %}
+```python
 YEAR_IN_SCHOOL_CHOICES = (
     ('FR', 'Freshman'),
     ('SO', 'Sophomore'),
     ('JR', 'Junior'),
     ('SR', 'Senior'),
 )
-{% endhighlight %}
+```
 
 일반적으로 모델 클래스 내에서 선택 사항을 정의하고 각 값에 대해 적절히 명명 된 상수를 정의하는 것이 가장 좋습니다.
 
-{% highlight python %}
-
+```python
 from django.db import models
 
 class Student(models.Model):
@@ -89,7 +88,7 @@ class Student(models.Model):
 
     def is_upperclass(self):
         return self.year_in_school in (self.JUNIOR, self.SENIOR)
-{% endhighlight %}
+```
 
 모델 클래스 외부에서 선택 목록을 정의한 다음 참조 할 수는 있지만 모델 클래스 내의 각 선택 항목에 대한 선택 사항과 이름을 정의하면 해당 정보를 사용하는 클래스와 모든 정보가 유지되고 선택 사항을 쉽게 참조 할 수 있습니다.
 조직 목적으로 사용할 수있는 명명 된 그룹으로 사용 가능한 선택 사항을 수집 할 수도 있습니다.
