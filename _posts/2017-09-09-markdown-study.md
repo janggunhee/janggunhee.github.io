@@ -4,7 +4,7 @@ title: markdown study
 description: "markdown study"
 modified: 2017-09-09
 tags: [markdown]
-categories: [etc, markdown]
+categories: [etc]
 ---
 
 # Markdown title
@@ -51,7 +51,7 @@ sdfs
 ### table
 
 table | head | item 
----|---|---
+|---|---|---|
 content1|content2|content3
 
 ```markdown
