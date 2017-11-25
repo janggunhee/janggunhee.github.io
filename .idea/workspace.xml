@@ -100,8 +100,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2017-10-10-django-models.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="429">
-                <caret line="148" column="0" lean-forward="true" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+              <first_editor relative-caret-position="2366">
+                <caret line="194" column="9" lean-forward="false" selection-start-line="194" selection-start-column="9" selection-end-line="194" selection-end-column="9" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -762,8 +762,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2017-10-10-django-models.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="429">
-            <caret line="148" column="0" lean-forward="true" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+          <first_editor relative-caret-position="2366">
+            <caret line="194" column="9" lean-forward="false" selection-start-line="194" selection-start-column="9" selection-end-line="194" selection-end-column="9" />
             <folding />
           </first_editor>
           <second_editor />

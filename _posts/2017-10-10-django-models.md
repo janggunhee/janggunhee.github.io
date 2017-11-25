@@ -192,7 +192,7 @@ YEAR_IN_SCHOOL_CHOICES = (
 - **두 번째 요소**는 기본 양식 위젯 또는 [ModelChoiceField](https://docs.djangoproject.com/ko/1.11/ref/forms/fields/#django.forms.ModelChoiceField), 선택박스에 'Freshman', 'Shphomore' 문자로 사용자에게 표시됩니다.
 
 `models.py`
-```
+```python
 from django.db import models
 
 class Person(models.Model):
@@ -240,7 +240,7 @@ class Person(models.Model):
 - **primary key field**는 read-only입니다. 기존 개체의 primary key의 value를 변경 한 다음 저장하면 새 개체가 이전 개체와 함께 만들어집니다.
 
 `models.py`
-```python 
+```python
 from django.db import models
 
 class Fruit(models.Model):
