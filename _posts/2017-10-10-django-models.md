@@ -163,7 +163,7 @@ models.DateTimeField(blank=True) # 비어있는 경우 IntegrityError를 발생�
 
 models.DateTimeField(null=True) # NULL은 허용되지만 form을 채워야합니다.
 ```
-```
+```python
 models.CharField(blank=True) # 문제 없습니다. 공백은 ' '로 저장됩니다.
 
 models.CharField(null=True) # NULL은 허용되지만 NULL로 설정되지 않습니다.
