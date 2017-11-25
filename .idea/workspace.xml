@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ad6ae41-30c3-4289-a378-91e81030979b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2017-10-10-django-models.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-11-20-javascript-basic.md" afterPath="$PROJECT_DIR$/_posts/2017-11-20-javascript-basic.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-10-10-django-models.md" afterPath="$PROJECT_DIR$/_posts/2017-10-10-django-models.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -101,8 +100,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2017-10-10-django-models.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="34">
-                <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="26" />
+              <first_editor relative-caret-position="429">
+                <caret line="148" column="0" lean-forward="true" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -197,7 +196,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="149" />
+    <option name="x" value="410" />
     <option name="y" value="23" />
     <option name="width" value="1027" />
     <option name="height" value="873" />
@@ -299,7 +298,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="149" y="23" width="1027" height="873" extended-state="0" />
+    <frame x="410" y="23" width="1027" height="873" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3164557" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -763,8 +762,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2017-10-10-django-models.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="34">
-            <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="26" />
+          <first_editor relative-caret-position="429">
+            <caret line="148" column="0" lean-forward="true" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />

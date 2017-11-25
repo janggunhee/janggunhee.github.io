@@ -23,7 +23,7 @@ categories: [Django]
 
 이 예시는 **Person**의 **first_name** 과 **last_name**을 정의한다.
 
-```pytnon
+```python
 from django.db import models
 
 class Person(models.Model):
@@ -39,7 +39,7 @@ class Person(models.Model):
  - **class** (Person) 는 **database table**이 되고 
  - **first_name** 과 **lsat_name**은 coloum(database field)이 된다. 
 
-```python 
+```python
 CREATE TABLE myapp_person (
     "id" serial NOT NULL PRIMARY KEY,
     "first_name" varchar(30) NOT NULL,
@@ -78,7 +78,7 @@ INSTALLED_APPS = [
 > - 필드이름을  `clean`, `save`, `delete` 등과 같이 [모델 API](https://docs.djangoproject.com/ko/1.11/ref/models/instances/) 와 동일한 이름으로 생성하지 않도록 주의해야 한다.
 > 
 
-```python 
+```python
 from django.db import models
 
 # class 모델이름(models.Model):
@@ -137,7 +137,6 @@ class Album(models.Model):
 
 > 모든 필드에는 여러가지 설정을 변경할 수 있는 필드 옵션을 지정해 줄 수 있습니다. 
 > [모델 필드 참조](https://docs.djangoproject.com/ko/1.11/ref/models/fields/#model-field-types)
-
 > 또한, 모든 필드 유형에 사용할 수 있는 일련의 common arguments가 있습니다. 모두 선택 옵션입니다.
 > 
 
