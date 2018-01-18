@@ -6,6 +6,7 @@ modified: 2017-09-14
 tags: [python]
 categories: [python]
 ---
+
 # 문자열 (String)
 
 > 문자열(String)이란 문자, 단어 등으로 구성된 문자들의 집합을 의미한다. 예를 들어 다음과 같은 것들이 문자열이다.
