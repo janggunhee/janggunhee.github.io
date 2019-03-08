@@ -72,7 +72,7 @@
 
 
 
-![girls000](/Users/projects/gunhee_blog/images/statistics_images/girls000.png)
+![girls000](../images/statistics_images/girls000.png)
 
 - 영국사회가 100명의 십대 청소년들 중 15명이 임신을 한다 생각했지만 
 - 공식적인 통계에 의하면 실제로는 한개의 점을 색칠하려면 200개에 가까운 점들이 있어야 했다.
