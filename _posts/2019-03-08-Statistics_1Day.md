@@ -6,7 +6,7 @@
 
 > Alan Smith | TEDxExeter
 >
-> ##Why you should love statistics
+> ### Why you should love statistics
 
 
 
