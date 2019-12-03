@@ -5,4 +5,4 @@ gem 'jekyll', "~>3.5"
 gem 'octopress'
 gem 'jekyll-paginate'
 gem 'neo-hpstr-jekyll-theme'
-gem "jekyll-whiteglass"
+gem "minimal-mistakes-jekyll"
