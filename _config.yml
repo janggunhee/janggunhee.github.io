@@ -67,7 +67,7 @@ bing_verify:
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Ko/Souel
-locale:      en_US
+locale:      Ko
 future:      true
 highlighter: rouge
 markdown:    kramdown
@@ -97,4 +97,6 @@ titlecase: true
 include: [".htaccess"]
 exclude: ["demo/*", "lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
 gems: [jekyll-paginate]
+
 theme: minimal-mistakes-jekyll
+minimal_mistakes_skin : "default"
