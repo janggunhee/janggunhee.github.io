@@ -1,102 +1,66 @@
-title:            Jang Gun Hee
-description:      생초보 개발자 입문기.
+title: Jang Gunhee
+logo: "images/logo.svg" # You can add own logo image.
+description: Personal Archiving
+baseurl: "" # The subpath of your site, e.g. /blog
+url: "https://janggunhee.github.io/" # The base hostname & protocol for your site, e.g. http://example.com
 
-# put your disqus here
-disqus_shortname:
-reading_time:     true # if true, shows the estimated reading time for a post
-words_per_minute: 200
-logo:             # logo visible in the topbar
-excerpt_separator: <!--more-->
-# Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
-# When testing locally leave blank or use http://localhost:4000
+# Author Settings
+author:
+  name: Jang Gunhee
+  bio: Hi, my name is Jang Gunhee.
 
-url: https://janggunhee.github.io/
+# Contact links
+twitter: https://twitter.com/ # Add your Twitter handle
+facebook: https://facebook.com/ # Add your Facebook handle
+dribbble: https://dribbble.com/ # Add your Dribbble handle
+instagram: https://instagram.com/ # Add your Instagram handle
+pinterest: https://pinterest.com/ # Add your Pinterest handle
+email: jan9.9unhee@gmail.com # Add your Email address
 
-# draw your top menu here
-# each item must have a title and a url.
-#   To list post categories. use type: 'categories'
-#   To create sub categories. add a submenu item
-# See the example
-menu:
-  - title: 'Home'
-    url: '/'
-  - title: 'Categories'
-    url: '/categories'
-    type: 'categories'
-  - title: 'Favorites'
-    url: '#'
-    submenu:
-      - title: 'Code Highlighter'
-        url: '/intro/code-highlighting-post/'
-      - title: 'Sample Post'
-        url: '/intro/sample-post/'
+# Hero Section
+hero: true # To enable the section hero, use the value true. To turn off use the value false.
+hero-title: Jang Gunhee / Blog # Add your hero title
+hero-subtitle: Just for Archiving What I Do # Add your hero subtitle
+hero-image: images/14.jpg # Add background image in section hero
 
-# Owner/author information
-owner:
-  name:           Jang gun hee
-  site:           https://github.com/janggunhee
-  avatar:         images/avatar.jpg
-  bio:            "슈퍼 생초보"
-  email:          jan9.9unhee@gmail.com
-  # Twitter nick for use in Twitter cards and follow button.
-  twitter: jang_gun_hee # if no twitter in this config, the twitter follow button will be removed
-  # GitHub nick for use in follow button in author block.
-  github: janggunhee
+# Footer
+footer-image: images/14.jpg # Add background image in footer
 
-# Twitter account associated with the site if different from owner/author twitter account.
-# Used in Twitter cards.
-twitter:
+# Comment Section (Disqus)
+disqus-identifier: gu-ni # Add your shortname for Disqus Comment. For example mr-brown
 
-# Social networking links used in author block underneath posts. Update and remove as you like.
-social:
-  - title: "github"
-    url: "https://github.com/janggunhee"
-  - title: "linkedin"
-    url: ""
-  - title: "youtube"
-    url: ""
+# Google Analytics
+google-analytics: "" # Add your identifier. For example UA-99631805-1.
 
-# Background image to be tiled on all pages
-background:
+# Newsletter
+mailchimp: "" # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
 
-# Analytics and webmaster tools stuff goes here
-google_analytics:
-google_verify:
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:
+# Build settings
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll/tagging
 
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Ko/Souel
-locale:      Ko
-future:      true
-highlighter: rouge
-markdown:    kramdown
+paginate: 4
+paginate_path: "/page/:num"
+
+# Pages Path
+defaults:
+  - scope:
+      path: '_pages'
+    values:
+      permalink: /:basename:output_ext
+
+include:
+  - _pages
+
+# Tags
+tag_page_dir:         tag
+tag_page_layout:      tag_page
+tag_permalink_style:  pretty
+
 sass:
   sass_dir: _sass
   style: compressed
-
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title/
-
-# Amount of post to show on home page
-paginate: 5
-
-# if true, shows the floatting share buttons
-float_share: true
-
-# Octopress
-# Default extensions
-post_ext: md
-page_ext: md
-# Found in _templates/
-post_layout: post
-page_layout: page
-# Format titles with titlecase?
-titlecase: true
-
-include: [".htaccess"]
-exclude: ["demo/*", "lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
-gems: [jekyll-paginate]
-
-theme: minimal-mistakes-jekyll
-minimal_mistakes_skin : "default"
