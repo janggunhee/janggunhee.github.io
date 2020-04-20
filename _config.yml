@@ -8,6 +8,8 @@ url: "https://janggunhee.github.io/" # The base hostname & protocol for your sit
 author:
   name: Jang Gunhee
   bio: Hi, my name is Jang Gunhee.
+  location: Seoul
+  email: "jan9.9unhee@gmail.com"
 
 # Contact links
 twitter: https://twitter.com/ # Add your Twitter handle
@@ -35,16 +37,35 @@ google-analytics: "" # Add your identifier. For example UA-99631805-1.
 # Newsletter
 mailchimp: "" # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
 
-# Build settings
+# Conversion
 markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Build settings
 permalink: pretty
+paginate: 4
+paginate_path: "/page/:num"
+timezone: "Asia/Seoul"
+
+# Plugins (previously gems:)
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll/tagging
-
-paginate: 4
-paginate_path: "/page/:num"
 
 # Pages Path
 defaults:

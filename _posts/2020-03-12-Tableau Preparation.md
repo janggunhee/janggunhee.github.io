@@ -1,7 +1,9 @@
 ---
-layout: page
+layout: post
 title: Tableau - 인터페이스 이해하기
-permalink: /post/
+permalink: /:categories/:year/:month/:day/:title/
+image: images/tableau-images/tab-logo.jpg
+tags: [Tableau] 
 ---
 
 
