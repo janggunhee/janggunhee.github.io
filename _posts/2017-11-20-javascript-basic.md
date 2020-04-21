@@ -3,6 +3,7 @@ layout: post
 title: javascript study
 description: "javascript study basic"
 modified: 2017-11-20
+permalink: /:title/
 tags: [javascript]
 categories: [javascript, etc]
 ---

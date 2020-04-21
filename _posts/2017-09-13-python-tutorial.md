@@ -3,6 +3,7 @@ layout: post
 title: Python - Tutorial
 description: "python study"
 modified: 2017-09-13
+permalink: /:title/
 tags: [python]
 categories: [python]
 ---

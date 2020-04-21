@@ -3,6 +3,7 @@ layout: post
 title: Second Post
 description: "두 번째로 올리는 생초보 분투기"
 modified: 2017-09-13
+permalink: /:title/
 tags: [life]
 categories: [life]
 ---

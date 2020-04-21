@@ -1,3 +1,11 @@
+---
+layout: post
+title: 통계학 입문 2
+permalink: /:title/
+use_math: true
+tags: [R, Statistics] 
+---
+
 ## 통계학 입문 - 2Day 
 
 
@@ -14,7 +22,7 @@
 
 [![ted_2day](../images/statistics_images/ted_2day.png)](https://www.ted.com/talks/arthur_benjamin_s_formula_for_changing_math_education?utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare)
 
-
+<div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/arthur_benjamin_teach_statistics_before_calculus" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
 
 
 

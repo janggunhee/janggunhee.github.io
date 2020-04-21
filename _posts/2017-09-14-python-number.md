@@ -3,6 +3,7 @@ layout: post
 title: Python - Number
 description: "python study"
 modified: 2017-09-14
+permalink: /:title/
 tags: [python]
 categories: [python]
 ---

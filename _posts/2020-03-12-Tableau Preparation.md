@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Tableau - 인터페이스 이해하기
-permalink: /:categories/:year/:month/:day/:title/
-image: images/tableau-images/tab-logo.jpg
+image: 
+permalink: /:title/
 tags: [Tableau] 
 ---
 
@@ -32,20 +32,28 @@ tags: [Tableau]
 > 모든 학습은 VIzlab 유툽 채널과 
 > 스터디 파이 태블로 베이직 코스를 통해 진행 하고 있습니다.
 
-> [[vizlab]](https://vizlab.tistory.com/)  
-> [[tableau basic class]](https://studypie.co/ko/course/tableau_basic_class)
- 
+##### [[vizlab]](https://vizlab.tistory.com/)  
+##### [[tableau basic class]](https://studypie.co/ko/course/tableau_basic_class)
+
+
 
 ### 👨‍🏫 태블로 베이직 스터디 코치 / 최정민 강사님
 
 - 스터디 파이 강의를 시작하기 전에 이미 유툽 채널을 구독해 강의를 듣고 있었다. 
+
 - 굳이 스터디 파이를 통해 비용을 지불하고 강의를 진행하는 이유는, **slack으로 강사님과 좀 더 밀접한 소통이 가능하다는 장점**이 있다. 
+
 - 강사님이 직접 질문에 피드백을 해주어 학습 퀄리티를 높여주고, 학습하는데 큰 동기부여가 된다.
+
 - 그리고 이 과정의 강사님은 특히 피드백이 빠르고 자세하다.
+
 - 본인 판단하에 필요한 온라인 강의는 스터디파이에서 진행하는 걸 추천합니다.
 
+  
 
 ***
+
+
 
 ### 태블로 베이직 - 첫걸음 1. 데이터 연결하기 
 
@@ -55,24 +63,26 @@ tags: [Tableau]
 ##### 2. [https://vizlab.tistory.com/78](https://vizlab.tistory.com/78)
 
 
+
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZC1l9Xba4vk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
-
 ***
+
+
 
 ### 태블로 베이직 - 첫걸음 2. 데이터 준비하기 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aRVccLYfyL4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ***
+
 
 
 ### 태블로 베이직 시리즈 - 첫걸음 3. 데이터 작업하기
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Dad0Pu3nfI8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ***
+
 
 
 # Data Preparation - 데이터 준비 
@@ -130,7 +140,9 @@ tags: [Tableau]
 - 와우 !!  똑똑하다.  데이터 원본을 잘 정리해 줍니다. !! 
 
 
+
 ***
+
 
 
 ## 두번째,  Pivot 피벗 
@@ -171,7 +183,6 @@ tags: [Tableau]
 - 이 과정에서 **피벗 기능이 핵심 구성요소**이다, 데이터의 구조 자체를 바꾸는 기능이기 때문이다. 
 - **crosstab 형태의 데이터 구조를, 태블로에서 사용하기 편한 columnar 형태로 바꾸는 것**이 피벗이다. 
 
-
 ***
 
 
@@ -209,6 +220,8 @@ tags: [Tableau]
 
 ***
 
+
+
 ## 네번째, 데이터 원본 필터 
 
 > 대용량 데이터를 취급할 때 유용하게 쓸 수 있는 
@@ -226,4 +239,7 @@ tags: [Tableau]
 - 데이터 원본 필터를 사용해 필요한 데이터만 불러오는 것이 좋다! 
 
  
+
+
+
 

@@ -3,6 +3,7 @@ layout: post
 title: Django Documentation - Models
 description: "Django Documentation Study"
 modified: 2017-19-10
+permalink: /:title/
 tags: [Django]
 categories: [Django]
 ---

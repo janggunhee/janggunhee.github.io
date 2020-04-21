@@ -3,6 +3,7 @@ layout: post
 title: SQL 알아가기 - Wildcard Characters
 description: "SQL - Wildcard Characters"
 modified: 2017-10-09
+permalink: /:title/
 tags: [SQL]
 categories: [SQL]
 ---

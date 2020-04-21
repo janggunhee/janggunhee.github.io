@@ -3,6 +3,7 @@ layout: post
 title: markdown study
 description: "markdown study"
 modified: 2017-09-09
+permalink: /:title/
 tags: [markdown]
 categories: [etc]
 ---

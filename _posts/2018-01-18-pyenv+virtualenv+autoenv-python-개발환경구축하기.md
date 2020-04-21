@@ -3,6 +3,7 @@ layout: post
 title: Python - pyenv+virtualenv+autoenv
 description: "python study"
 modified: 2018-01-18
+permalink: /:title/
 tags: [python]
 categories: [python]
 ---
